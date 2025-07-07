@@ -1,0 +1,81 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="33%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main background circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#bgGradient)" filter="url(#glow)"/>
+  
+  <!-- Digital circuit pattern background -->
+  <g opacity="0.3" stroke="white" stroke-width="2" fill="none">
+    <!-- Digital path/route pattern -->
+    <path d="M30 100 L70 100 L85 85 L115 85 L130 100 L170 100" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M100 30 L100 85" stroke-linecap="round"/>
+    <path d="M100 115 L100 170" stroke-linecap="round"/>
+    
+    <!-- Connection nodes -->
+    <circle cx="70" cy="100" r="3" fill="white"/>
+    <circle cx="130" cy="100" r="3" fill="white"/>
+    <circle cx="100" cy="85" r="3" fill="white"/>
+    <circle cx="100" cy="115" r="3" fill="white"/>
+  </g>
+  
+  <!-- Main bike icon with digital elements -->
+  <g transform="translate(100, 100)" fill="white" stroke="white" stroke-width="3">
+    <!-- Bike wheels -->
+    <circle cx="-25" cy="15" r="12" fill="none"/>
+    <circle cx="25" cy="15" r="12" fill="none"/>
+    
+    <!-- Bike frame -->
+    <path d="M-13 15 L13 15 M0 15 L0 -5 L-15 -5 M0 -5 L15 -5 L10 -20 L-10 -20" 
+          fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Pedals -->
+    <circle cx="0" cy="15" r="2" fill="white"/>
+    
+    <!-- Handlebars -->
+    <path d="M-5 -20 L5 -20" stroke-linecap="round"/>
+    
+    <!-- Digital elements - data flow dots -->
+    <circle cx="-35" cy="-15" r="2" fill="white" opacity="0.8">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="35" cy="-15" r="2" fill="white" opacity="0.8">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="-35" r="2" fill="white" opacity="0.8">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Connection lines for digital aspect -->
+    <path d="M-35 -15 L0 -35 L35 -15" stroke="white" stroke-width="1.5" 
+          fill="none" opacity="0.6" stroke-dasharray="3,3">
+      <animate attributeName="stroke-dashoffset" values="0;6" dur="1s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Company name -->
+  <text x="100" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="url(#textGradient)">
+    DIGITAL RIDE
+  </text>
+</svg>
