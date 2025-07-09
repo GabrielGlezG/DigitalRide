@@ -38,7 +38,7 @@ ${formData.message}
 Enviado desde digitalride.com
       `);
 
-      const mailtoLink = `mailto:gabrielgonzalez@nextai.cl?subject=${subject}&body=${body}`;
+      const mailtoLink = `mailto:gabriel.gonzalez@nextai.cl?subject=${subject}&body=${body}`;
       window.location.href = mailtoLink;
 
       setSubmitStatus('success');
@@ -109,8 +109,8 @@ Enviado desde digitalride.com
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="font-black text-white text-lg">EMAIL</div>
-                    <a href="mailto:gabrielgonzalez@nextai.cl" className="text-blue-400 hover:text-blue-300 font-bold transition-colors break-words">
-                      gabrielgonzalez@nextai.cl
+                    <a href="mailto:gabriel.gonzalez@nextai.cl" className="text-blue-400 hover:text-blue-300 font-bold transition-colors break-words">
+                      gabriel.gonzalez@nextai.cl
                     </a>
                   </div>
                 </div>
