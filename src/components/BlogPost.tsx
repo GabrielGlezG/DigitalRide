@@ -461,17 +461,24 @@ const BlogPost: React.FC<BlogPostProps> = ({ postId, onBack }) => {
   const CategoryIcon = getCategoryIcon(post.category);
   const categoryColor = getCategoryColor(post.category);
 
-  const sharePost = () => {
+  const sharePost = async () => {
     if (navigator.share) {
-      navigator.share({
-        title: post.title,
-        text: post.excerpt,
-        url: window.location.href,
-      });
+      try {
+        await navigator.share({
+          title: post.title,
+          text: post.excerpt,
+          url: window.location.href,
+        });
+      } catch (error) {
+        // Fallback: copy to clipboard
+        navigator.clipboard.writeText(window.location.href);
+        alert('Enlace copiado al portapapeles');
+      }
     } else {
       // Fallback: copy to clipboard
       navigator.clipboard.writeText(window.location.href);
       alert('Enlace copiado al portapapeles');
+    }
     }
   };
 
