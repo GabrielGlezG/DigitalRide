@@ -61,7 +61,7 @@ const Blog = () => {
       tags: ["Estrategia", "Digital", "Innovación"]
     },
     {
-      id: 4,
+      id: 'ia-desarrollo-herramientas',
       title: "Inteligencia Artificial en el Desarrollo: Herramientas Esenciales",
       excerpt: "Descubre cómo la IA está transformando el desarrollo de software y qué herramientas debes conocer para mantenerte competitivo.",
       category: 'tendencias',
@@ -74,7 +74,7 @@ const Blog = () => {
       tags: ["AI", "Machine Learning", "Automatización"]
     },
     {
-      id: 5,
+      id: 'contratos-tecnologicos-errores',
       title: "Contratos Tecnológicos: Errores Comunes y Cómo Evitarlos",
       excerpt: "Análisis de los errores más frecuentes en contratos de desarrollo de software y servicios tecnológicos, con soluciones prácticas.",
       category: 'legal',
@@ -87,7 +87,7 @@ const Blog = () => {
       tags: ["Contratos", "Legal", "Software"]
     },
     {
-      id: 6,
+      id: 'microservicios-implementacion',
       title: "Arquitectura de Microservicios: Cuándo y Cómo Implementarla",
       excerpt: "Guía práctica para decidir si tu proyecto necesita microservicios y cómo implementarlos de manera efectiva.",
       category: 'desarrollo',
