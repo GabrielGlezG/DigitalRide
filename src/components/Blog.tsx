@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
 import { BookOpen, Calendar, User, ArrowRight, Search, Filter, Zap, Code, Shield, Brain, Bike, Clock, Eye } from 'lucide-react';
+import BlogPost from './BlogPost';
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
+  const [selectedPost, setSelectedPost] = useState<string | null>(null);
+
+  // Si hay un post seleccionado, mostrar el componente BlogPost
+  if (selectedPost) {
+    return <BlogPost postId={selectedPost} onBack={() => setSelectedPost(null)} />;
+  }
 
   const categories = [
     { id: 'all', name: 'Todos', icon: BookOpen, color: 'from-emerald-500 to-teal-600' },
@@ -15,7 +22,7 @@ const Blog = () => {
 
   const blogPosts = [
     {
-      id: 1,
+      id: 'futuro-desarrollo-web-2024',
       title: "El Futuro del Desarrollo Web: Tendencias 2024",
       excerpt: "Exploramos las tecnologías emergentes que están revolucionando el desarrollo web y cómo pueden impulsar tu negocio hacia el futuro digital.",
       category: 'desarrollo',
@@ -28,7 +35,7 @@ const Blog = () => {
       tags: ["React", "Next.js", "AI", "Web3"]
     },
     {
-      id: 2,
+      id: 'proteccion-datos-era-digital',
       title: "Protección de Datos en la Era Digital: Guía Completa",
       excerpt: "Todo lo que necesitas saber sobre GDPR, LOPD y las nuevas regulaciones de protección de datos para empresas tecnológicas.",
       category: 'legal',
@@ -41,7 +48,7 @@ const Blog = () => {
       tags: ["GDPR", "Compliance", "Seguridad"]
     },
     {
-      id: 3,
+      id: 'transformacion-digital-estrategia',
       title: "Transformación Digital: De la Estrategia a la Ejecución",
       excerpt: "Metodologías probadas para liderar procesos de transformación digital exitosos en organizaciones de cualquier tamaño.",
       category: 'consultoria',
@@ -231,7 +238,10 @@ const Blog = () => {
                         </span>
                       ))}
                     </div>
-                    <button className="flex items-center text-emerald-400 hover:text-emerald-300 font-bold transition-colors group-hover:translate-x-1 transform duration-300">
+                    <button 
+                      onClick={() => setSelectedPost(post.id)}
+                      className="flex items-center text-emerald-400 hover:text-emerald-300 font-bold transition-colors group-hover:translate-x-1 transform duration-300"
+                    >
                       Leer más
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </button>
@@ -275,7 +285,10 @@ const Blog = () => {
                     </span>
                   ))}
                 </div>
-                <button className="flex items-center text-blue-400 hover:text-blue-300 font-bold text-sm transition-colors">
+                <button 
+                  onClick={() => setSelectedPost(post.id)}
+                  className="flex items-center text-blue-400 hover:text-blue-300 font-bold text-sm transition-colors"
+                >
                   Leer más
                   <ArrowRight className="w-3 h-3 ml-1" />
                 </button>

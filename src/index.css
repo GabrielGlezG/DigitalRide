@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Estilos para el contenido del blog */
+.prose h2 {
+  @apply text-3xl font-black text-white mt-12 mb-6 border-b border-gray-600 pb-4;
+}
+
+.prose h3 {
+  @apply text-2xl font-bold text-white mt-10 mb-4;
+}
+
+.prose h4 {
+  @apply text-xl font-bold text-gray-200 mt-8 mb-3;
+}
+
+.prose h5 {
+  @apply text-lg font-bold text-gray-300 mt-6 mb-2;
+}
+
+.prose p {
+  @apply text-gray-300 leading-relaxed mb-6;
+}
+
+.prose ul, .prose ol {
+  @apply text-gray-300 mb-6;
+}
+
+.prose li {
+  @apply mb-2;
+}
+
+.prose strong {
+  @apply text-white font-bold;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-blue-500 pl-6 py-4 bg-slate-800/50 rounded-r-lg my-8 italic text-gray-300;
+}
+
+.prose table {
+  @apply w-full border-collapse border border-gray-600 my-8;
+}
+
+.prose th {
+  @apply bg-slate-800 text-white font-bold p-3 border border-gray-600;
+}
+
+.prose td {
+  @apply p-3 border border-gray-600 text-gray-300;
+}
+
+.prose code {
+  @apply bg-slate-800 text-amber-400 px-2 py-1 rounded text-sm font-mono;
+}
+
+.prose pre {
+  @apply bg-slate-900 p-4 rounded-lg overflow-x-auto my-6;
+}
+
+.prose a {
+  @apply text-blue-400 hover:text-blue-300 transition-colors underline;
+}
