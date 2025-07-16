@@ -67,7 +67,7 @@ const Hero = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
               <div className="flex items-center space-x-3 p-3 bg-gradient-to-r from-emerald-500/10 to-teal-600/10 rounded-xl border border-emerald-500/20">
                 <Star className="w-5 h-5 text-emerald-400" />
-                <span className="text-sm font-bold text-white">Calidad Premium</span>
+                <span className="text-sm font-bold text-white">Calidad Excepcional</span>
               </div>
               <div className="flex items-center space-x-3 p-3 bg-gradient-to-r from-violet-500/10 to-purple-600/10 rounded-xl border border-violet-500/20">
                 <Clock className="w-5 h-5 text-violet-400" />
@@ -122,50 +122,19 @@ const Hero = () => {
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="text-center p-4 bg-gradient-to-br from-emerald-500/20 to-teal-600/20 rounded-2xl border border-emerald-500/30">
                   <div className="text-3xl font-black text-emerald-400 mb-2">∞</div>
-                  <div className="text-emerald-300 font-bold text-sm">RUTAS DISPONIBLES</div>
+                  <div className="text-emerald-300 font-bold text-sm">SOLUCIONES</div>
                 </div>
                 <div className="text-center p-4 bg-gradient-to-br from-violet-500/20 to-purple-600/20 rounded-2xl border border-violet-500/30">
                   <div className="text-3xl font-black text-violet-400 mb-2">24/7</div>
                   <div className="text-violet-300 font-bold text-sm">SOPORTE ACTIVO</div>
                 </div>
                 <div className="text-center p-4 bg-gradient-to-br from-amber-500/20 to-orange-600/20 rounded-2xl border border-amber-500/30">
-                  <div className="text-3xl font-black text-amber-400 mb-2">100%</div>
-                  <div className="text-amber-300 font-bold text-sm">CALIDAD GARANTIZADA</div>
+                  <div className="text-3xl font-black text-amber-400 mb-2">+50</div>
+                  <div className="text-amber-300 font-bold text-sm">CLIENTES FELICES</div>
                 </div>
                 <div className="text-center p-4 bg-gradient-to-br from-teal-500/20 to-emerald-600/20 rounded-2xl border border-teal-500/30">
                   <div className="text-3xl font-black text-teal-400 mb-2">&lt;2h</div>
                   <div className="text-teal-300 font-bold text-sm">TIEMPO RESPUESTA</div>
-                </div>
-              </div>
-
-              {/* Progress Bars */}
-              <div className="space-y-4">
-                <div>
-                  <div className="flex justify-between text-sm mb-2">
-                    <span className="text-gray-300 font-bold">Desarrollo</span>
-                    <span className="text-emerald-400 font-bold">95%</span>
-                  </div>
-                  <div className="w-full bg-slate-700 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-emerald-500 to-teal-600 h-2 rounded-full w-[95%] animate-pulse"></div>
-                  </div>
-                </div>
-                <div>
-                  <div className="flex justify-between text-sm mb-2">
-                    <span className="text-gray-300 font-bold">Consultoría</span>
-                    <span className="text-violet-400 font-bold">90%</span>
-                  </div>
-                  <div className="w-full bg-slate-700 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-violet-500 to-purple-600 h-2 rounded-full w-[90%] animate-pulse"></div>
-                  </div>
-                </div>
-                <div>
-                  <div className="flex justify-between text-sm mb-2">
-                    <span className="text-gray-300 font-bold">Legal Tech</span>
-                    <span className="text-amber-400 font-bold">88%</span>
-                  </div>
-                  <div className="w-full bg-slate-700 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-amber-500 to-orange-600 h-2 rounded-full w-[88%] animate-pulse"></div>
-                  </div>
                 </div>
               </div>
             </div>

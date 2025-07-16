@@ -23,8 +23,6 @@ const Services = () => {
       color: "from-emerald-500 to-teal-600",
       bgGradient: "from-emerald-900/50 to-teal-900/50",
       borderColor: "border-emerald-500/20",
-      price: "Desde $2,500",
-      duration: "2-8 semanas"
     },
     {
       icon: Brain,
@@ -36,8 +34,6 @@ const Services = () => {
       color: "from-violet-500 to-purple-600",
       bgGradient: "from-violet-900/50 to-purple-900/50",
       borderColor: "border-violet-500/20",
-      price: "Desde $1,800",
-      duration: "1-4 semanas"
     },
     {
       icon: Shield,
@@ -49,8 +45,6 @@ const Services = () => {
       color: "from-amber-500 to-orange-600",
       bgGradient: "from-amber-900/50 to-orange-900/50",
       borderColor: "border-amber-500/20",
-      price: "Desde $1,200",
-      duration: "1-3 semanas"
     }
   ];
 
@@ -121,15 +115,9 @@ const Services = () => {
               
               <div className="relative z-10">
                 {/* Header */}
-                <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center mb-6">
                   <div className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 shadow-lg`}>
                     <service.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <div className="text-right">
-                    <div className="text-sm text-gray-400 font-bold">{service.duration}</div>
-                    <div className={`text-lg font-black text-transparent bg-clip-text bg-gradient-to-r ${service.color}`}>
-                      {service.price}
-                    </div>
                   </div>
                 </div>
                 
