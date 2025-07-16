@@ -49,13 +49,6 @@ const Header = () => {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-400 to-indigo-600 transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button
-              onClick={() => scrollToSection('blog')}
-              className="text-gray-300 hover:text-emerald-400 transition-colors font-bold relative group"
-            >
-              BLOG
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-emerald-400 to-teal-500 transition-all duration-300 group-hover:w-full"></span>
-            </button>
-            <button
               onClick={() => scrollToSection('contacto')}
               className="text-gray-300 hover:text-indigo-300 transition-colors font-bold relative group"
             >
@@ -100,12 +93,6 @@ const Header = () => {
               className="block w-full text-left text-gray-300 hover:text-indigo-400 transition-colors font-bold py-2"
             >
               EQUIPO
-            </button>
-            <button
-              onClick={() => scrollToSection('blog')}
-              className="block w-full text-left text-gray-300 hover:text-emerald-400 transition-colors font-bold py-2"
-            >
-              BLOG
             </button>
             <button
               onClick={() => scrollToSection('contacto')}

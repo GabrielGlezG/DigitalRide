@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import About from './components/About';
 import Team from './components/Team';
-import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 // import ParticlesBackground from './components/ParticlesBackground';
@@ -20,7 +19,6 @@ function App() {
         <Services />
         <About />
         <Team />
-        <Blog />
         <Contact />
         <Footer />
       </div>
