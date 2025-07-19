@@ -67,7 +67,7 @@ const Hero = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
               <div className="flex items-center space-x-3 p-3 bg-gradient-to-r from-emerald-500/10 to-teal-600/10 rounded-xl border border-emerald-500/20">
                 <Star className="w-5 h-5 text-emerald-400" />
-                <span className="text-sm font-bold text-white">Calidad Excepcional</span>
+                <span className="text-sm font-bold text-white">Código Limpio</span>
               </div>
               <div className="flex items-center space-x-3 p-3 bg-gradient-to-r from-violet-500/10 to-purple-600/10 rounded-xl border border-violet-500/20">
                 <Clock className="w-5 h-5 text-violet-400" />
@@ -75,7 +75,7 @@ const Hero = () => {
               </div>
               <div className="flex items-center space-x-3 p-3 bg-gradient-to-r from-amber-500/10 to-orange-600/10 rounded-xl border border-amber-500/20">
                 <Shield className="w-5 h-5 text-amber-400" />
-                <span className="text-sm font-bold text-white">100% Seguro</span>
+                <span className="text-sm font-bold text-white">Desarrollo Seguro</span>
               </div>
             </div>
 
@@ -100,11 +100,11 @@ const Hero = () => {
             <div className="flex items-center space-x-6 text-sm text-gray-400">
               <div className="flex items-center">
                 <Users className="w-4 h-4 mr-2 text-emerald-400" />
-                <span className="font-bold">+50 Clientes Satisfechos</span>
+                <span className="font-bold">Equipo Especializado</span>
               </div>
               <div className="flex items-center">
                 <Star className="w-4 h-4 mr-2 text-amber-400" />
-                <span className="font-bold">5.0 Rating</span>
+                <span className="font-bold">Tecnologías Modernas</span>
               </div>
             </div>
           </div>
@@ -121,16 +121,16 @@ const Hero = () => {
               {/* Stats Grid */}
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="text-center p-4 bg-gradient-to-br from-emerald-500/20 to-teal-600/20 rounded-2xl border border-emerald-500/30">
-                  <div className="text-3xl font-black text-emerald-400 mb-2">∞</div>
-                  <div className="text-emerald-300 font-bold text-sm">SOLUCIONES</div>
+                  <div className="text-3xl font-black text-emerald-400 mb-2">2024</div>
+                  <div className="text-emerald-300 font-bold text-sm">FUNDACIÓN</div>
                 </div>
                 <div className="text-center p-4 bg-gradient-to-br from-violet-500/20 to-purple-600/20 rounded-2xl border border-violet-500/30">
                   <div className="text-3xl font-black text-violet-400 mb-2">24/7</div>
-                  <div className="text-violet-300 font-bold text-sm">SOPORTE ACTIVO</div>
+                  <div className="text-violet-300 font-bold text-sm">DISPONIBILIDAD</div>
                 </div>
                 <div className="text-center p-4 bg-gradient-to-br from-amber-500/20 to-orange-600/20 rounded-2xl border border-amber-500/30">
-                  <div className="text-3xl font-black text-amber-400 mb-2">+50</div>
-                  <div className="text-amber-300 font-bold text-sm">CLIENTES FELICES</div>
+                  <div className="text-3xl font-black text-amber-400 mb-2">CL</div>
+                  <div className="text-amber-300 font-bold text-sm">SANTIAGO</div>
                 </div>
                 <div className="text-center p-4 bg-gradient-to-br from-teal-500/20 to-emerald-600/20 rounded-2xl border border-teal-500/30">
                   <div className="text-3xl font-black text-teal-400 mb-2">&lt;2h</div>
