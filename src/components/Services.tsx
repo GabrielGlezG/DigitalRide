@@ -20,9 +20,9 @@ const Services = () => {
       description: "Creamos experiencias digitales que conectan con tus usuarios. Desde aplicaciones web hasta plataformas móviles, desarrollamos soluciones que marcan la diferencia.",
       features: ["Aplicaciones Web Modernas", "Apps Móviles Intuitivas", "Plataformas Escalables", "Interfaces Innovadoras"],
       technologies: ["React", "Next.js", "Node.js", "TypeScript"],
-      color: "from-emerald-500 to-teal-600",
-      bgGradient: "from-emerald-900/50 to-teal-900/50",
-      borderColor: "border-emerald-500/20",
+      color: "from-blue-500 to-indigo-600",
+      bgGradient: "from-blue-900/50 to-indigo-900/50",
+      borderColor: "border-blue-500/20",
     },
     {
       icon: Brain,
@@ -31,9 +31,9 @@ const Services = () => {
       description: "Diseñamos el futuro tecnológico de tu empresa. Analizamos, planificamos y ejecutamos estrategias que impulsan el crecimiento y la innovación.",
       features: ["Transformación Digital", "Arquitectura Tecnológica", "Optimización de Procesos", "Estrategia de Innovación"],
       technologies: ["Cloud", "DevOps", "AI/ML", "Analytics"],
-      color: "from-violet-500 to-purple-600",
-      bgGradient: "from-violet-900/50 to-purple-900/50",
-      borderColor: "border-violet-500/20",
+      color: "from-slate-400 to-slate-600",
+      bgGradient: "from-slate-800/50 to-slate-900/50",
+      borderColor: "border-slate-500/20",
     },
     {
       icon: Shield,
@@ -42,9 +42,9 @@ const Services = () => {
       description: "Blindamos tu inversión tecnológica. Especialistas en derecho informático que protegen tus activos digitales y aseguran el cumplimiento normativo.",
       features: ["Contratos Tecnológicos", "Protección de Datos", "Propiedad Intelectual", "Compliance Digital"],
       technologies: ["GDPR", "LOPD", "ISO 27001", "Auditorías"],
-      color: "from-amber-500 to-orange-600",
-      bgGradient: "from-amber-900/50 to-orange-900/50",
-      borderColor: "border-amber-500/20",
+      color: "from-indigo-400 to-indigo-600",
+      bgGradient: "from-indigo-900/50 to-slate-900/50",
+      borderColor: "border-indigo-500/20",
     }
   ];
 
@@ -54,50 +54,50 @@ const Services = () => {
       title: "ANÁLISIS",
       description: "Exploramos tu visión y objetivos",
       icon: "🔍",
-      color: "from-emerald-500 to-teal-600"
+      color: "from-blue-500 to-indigo-600"
     },
     {
       step: "02", 
       title: "DISEÑO",
       description: "Trazamos la ruta perfecta",
       icon: "🎨",
-      color: "from-violet-500 to-purple-600"
+      color: "from-slate-400 to-slate-600"
     },
     {
       step: "03",
       title: "DESARROLLO",
       description: "Pedaleamos juntos hacia el éxito",
       icon: "⚡",
-      color: "from-amber-500 to-orange-600"
+      color: "from-indigo-400 to-indigo-600"
     },
     {
       step: "04",
       title: "LANZAMIENTO",
       description: "Llegamos al destino con éxito",
       icon: "🚀",
-      color: "from-teal-500 to-emerald-600"
+      color: "from-zinc-400 to-gray-500"
     }
   ];
 
   return (
-    <section id="servicios" className="py-20 bg-gradient-to-br from-slate-800 via-gray-900 to-slate-900 relative overflow-hidden">
+    <section id="servicios" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-br from-emerald-500/30 to-teal-600/30 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-br from-violet-500/30 to-purple-600/30 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-gradient-to-br from-amber-500/30 to-orange-600/30 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-20 left-10 w-96 h-96 bg-gradient-to-br from-blue-500/30 to-indigo-600/30 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-80 h-80 bg-gradient-to-br from-slate-400/30 to-slate-600/30 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-gradient-to-br from-indigo-400/30 to-indigo-600/30 rounded-full blur-3xl animate-pulse"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-20">
-          <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-emerald-500/20 to-teal-600/20 rounded-full text-emerald-300 text-sm font-bold mb-8 border border-emerald-500/30 backdrop-blur-sm">
+          <div className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-blue-300 text-sm font-bold mb-8 border border-blue-500/30 backdrop-blur-sm">
             <Sparkles className="w-5 h-5 mr-2 animate-pulse" />
             NUESTRAS ESPECIALIDADES
           </div>
           <h2 className="text-4xl md:text-6xl font-black text-white mb-6">
             RUTAS QUE
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-violet-400 to-amber-400">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-slate-400 to-indigo-400">
               TRANSFORMAN
             </span>
           </h2>
@@ -163,7 +163,7 @@ const Services = () => {
           <div className="text-center mb-16">
             <h3 className="text-3xl md:text-4xl font-black text-white mb-4">
               NUESTRA
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400"> METODOLOGÍA</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400"> METODOLOGÍA</span>
             </h3>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Cuatro etapas que transforman ideas en aventuras digitales exitosas
@@ -185,7 +185,7 @@ const Services = () => {
                   <div className={`text-sm font-black text-transparent bg-clip-text bg-gradient-to-r ${process.color} mb-2`}>
                     PASO {process.step}
                   </div>
-                  <h4 className="font-black text-white mb-2 text-lg group-hover:text-emerald-300 transition-colors">{process.title}</h4>
+                  <h4 className="font-black text-white mb-2 text-lg group-hover:text-blue-300 transition-colors">{process.title}</h4>
                   <p className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors">{process.description}</p>
                 </div>
               </div>
@@ -195,19 +195,19 @@ const Services = () => {
 
         {/* Call to action */}
         <div className="bg-gradient-to-r from-slate-800/90 to-gray-900/90 backdrop-blur-sm rounded-3xl p-12 text-center border border-gray-700/50 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 via-violet-600/10 to-amber-500/10 animate-pulse"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-slate-600/10 to-indigo-500/10 animate-pulse"></div>
           <div className="relative z-10">
-            <Bike className="w-16 h-16 text-emerald-400 mx-auto mb-6 animate-bounce" />
+            <Bike className="w-16 h-16 text-blue-400 mx-auto mb-6 animate-bounce" />
             <h3 className="text-3xl md:text-4xl font-black text-white mb-4">
               ¿LISTO PARA EL
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400"> PASEO</span>?
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400"> PASEO</span>?
             </h3>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
               Combinamos nuestras rutas para crear la aventura digital perfecta que tu empresa necesita
             </p>
             <button 
               onClick={scrollToContact}
-              className="bg-gradient-to-r from-emerald-500 via-violet-600 to-amber-600 text-white px-12 py-4 rounded-xl font-black text-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center mx-auto group"
+              className="bg-gradient-to-r from-blue-500 via-slate-600 to-indigo-600 text-white px-12 py-4 rounded-xl font-black text-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center mx-auto group"
             >
               <Zap className="w-6 h-6 mr-2 group-hover:rotate-12 transition-transform" />
               INICIAR AVENTURA DIGITAL
